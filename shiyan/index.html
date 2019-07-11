@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script>
+    
+    axios({
+  
+  method: 'get',
+url:`http://m.maoyan.com/ajax/movieOnInfoList?token=`,
+// data:{
+//   movieId: 1189879,
+//   day: 2019-07-11,
+//   offset: 0,
+//   limit: 20,
+//   districtId: -1,
+//   lineId: -1,
+//   hallType: -1,
+//   brandId: -1,
+//   serviceId: -1,
+//   areaId: -1,
+//   stationId: -1,
+//   item: '', 
+//   updateShowDay: true,
+//   reqId: 1562761518036,
+//   cityId: 10
+//  }
+
+}).then((res) =>{
+console.log(res)
+} ).catch( e=> {
+  console.log(e)
+})
+    </script>
+</body>
+</html>
